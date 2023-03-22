@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-app {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+  text-align: center;
+  background-color: cornflowerblue;
+  height: auto;
+  padding-bottom: 1rem;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+.que-container{
+  background-color: white;
+  align-items: center;
+  border-radius: 5px;
+  padding: 0.25rem;
+  margin: 0 0 1rem 0;
+}
+
+.ans-container{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+}
+
+.btn{
+  background: white;
+  width: 40%;
+  height: 2rem;
+  gap: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.bg-green{
+  background-color: green;
+  color: white;
+}
+
+.bg-red{
+  background-color: red;
+  color: white;
+}
+
+.next-btn{
+  background: white;
+  width: 40%;
+  height: 2rem;
+  gap: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.end-p{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 556px) {
+  .main-app{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 310px) {
+  .ans-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn{
+    width: 65%;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+
+  .next-btn{
+    width: 65%;
+    height: 2.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+  }
+}
